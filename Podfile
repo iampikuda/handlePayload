@@ -9,9 +9,6 @@ target 'HandlePayload' do
 
   target 'HandlePayloadTests' do
     inherit! :search_paths
-    pod 'Quick'
-    pod 'Nimble'
-    pod 'OHHTTPStubs/Swift'	
   end
 
 end
