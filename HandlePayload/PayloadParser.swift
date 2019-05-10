@@ -1,6 +1,17 @@
-# handlePayload
+//
+//  PayloadParser.swift
+//  HandlePayload
+//
+//  Created by Oluwadamisi Pikuda on 09/05/2019.
+//  Copyright © 2019 Oluwadamisi Pikuda. All rights reserved.
+//
 
-```
+import Foundation
+
+protocol PayloadParserProtocol: class {
+    func payload(from data: Data?) throws -> Any?
+}
+
 class PayloadParser: PayloadParserProtocol {
     func payload(from data: Data?) throws -> Any? {
         do {
@@ -26,11 +37,3 @@ class PayloadParser: PayloadParserProtocol {
         }
     }
 }
-```
-
-This is just a simple function for decoding data from a server.
-
-
-### Tests
-
-Run `CMD + U` for tests.
